@@ -14,8 +14,8 @@ export default function Home() {
         <Image
           src="/favicon.png"
           alt="GalloConta Logo"
-          width={60}
-          height={60}
+          width={200}
+          height={200}
           className="h-[1.3em] w-auto pr-[0.3em]"
         />
         {t('title')}
