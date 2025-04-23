@@ -35,6 +35,7 @@ export default function FeedbackForm({ closeForm, filename, param_1, param_2 }: 
         <div className="text-lg font-medium">{t('question')}</div>
         <div className="flex justify-center gap-4">
           <button
+            id="likeButton"
             onClick={() => handleFeedback(true)}
             disabled={submitting}
             className="flex items-center gap-2 px-4 py-2 rounded-md border border-green-600 text-green-600 hover:bg-green-50 disabled:opacity-50"
@@ -43,6 +44,7 @@ export default function FeedbackForm({ closeForm, filename, param_1, param_2 }: 
             <span>{t('yes')}</span>
           </button>
           <button
+            id="dislikeButton"
             onClick={() => handleFeedback(false)}
             disabled={submitting}
             className="flex items-center gap-2 px-4 py-2 rounded-md border border-red-600 text-red-600 hover:bg-red-50 disabled:opacity-50"

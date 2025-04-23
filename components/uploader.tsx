@@ -209,8 +209,9 @@ export default function Uploader() {
           </div>
         </div>
 
-        {!resultCount && (
+        {resultCount === null && (
           <button
+            id="predictButton"
             type="submit"
             disabled={isUploading || !file}
             className="text-sm font-medium border-black bg-black text-white hover:bg-white hover:text-black disabled:cursor-not-allowed disabled:border-gray-200 disabled:bg-gray-100 disabled:text-gray-400 flex h-10 w-full items-center justify-center rounded-md border text-sm transition-all focus:outline-none"
@@ -237,6 +238,7 @@ export default function Uploader() {
         )}
 
         <button
+          id="reloadButton"
           type="reset"
           onClick={function () {resultCount !== null ? setFeedbackOpen(true) : reset()} }
           disabled={isUploading || !file}

@@ -85,6 +85,7 @@ export default function AdjustParams({
           </div>
 
           <button
+            id="adjustButton"
             type="button"
             onClick={onSubmit}
             className="mt-2 w-full h-10 rounded-md border border-black bg-black text-white hover:bg-white hover:text-black transition-all text-sm"
