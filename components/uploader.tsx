@@ -39,7 +39,8 @@ export default function Uploader() {
     }
 
     if (file.size / 1024 / 1024 > max_size && max_size > 0) {
-      alert(`${t('size_error')} ${max_size} MB`)
+      var size_error = t('size_error')
+      alert(`${size_error} ${max_size} MB`)
       return
     }
 
